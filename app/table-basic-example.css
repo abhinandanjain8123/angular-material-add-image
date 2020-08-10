@@ -2,7 +2,13 @@ table {
   width: 100%;
 }
 
-img {
-  width: 60px;
-  height: 60px;
+.image-block img {
+  width: 100px;
+  height: 100px;
 }
+
+
+.image-block button{
+  margin-top:14px
+}
+
