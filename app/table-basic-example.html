@@ -1,0 +1,19 @@
+<section>
+  <div style="padding:4px;float:left" *ngFor="let img of dataSource">
+    <img [src]="img.imageUrl" />
+  </div>
+	<div>
+
+		<button style="margin-top:4px" mat-mini-fab color="primary" matTooltip="PO is mandatory for APPROVE" type="button" data-tooltip="Hovered content" class="btn btn-secondary" (click)="fileInput.click()">
+                    <mat-icon>playlist_add</mat-icon>
+                    <input type="file" style="display:none;" #fileInput
+                        (change)="uploadAndProgress($event.target.files)" placeholder="Attachment" multiple>
+                </button>
+	</div>
+</section>
+
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
